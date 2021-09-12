@@ -1,14 +1,20 @@
 const express = require('express');
 const dotenv = require('dotenv');
 
-//load env vars
+//Routes files
+const delivers = require('./routes/delivers.js');
 
-dotenv.config({path: './config/config.env'});
+//load env vars
+dotenv.config({ path: './config/config.env' });
+
+//port
 const PORT = process.env.PORT || 5000;
 
 const app = express();
 
-app.listen(PORT, console.log(`server running on port ${process.env.PORT} mode on port ${PORT}`))
+app.use('/api/v1/delivers/', delivers);
 
-
-
+app.listen(
+	PORT,
+	console.log(`server running on localhost:${process.env.PORT}`)
+);
