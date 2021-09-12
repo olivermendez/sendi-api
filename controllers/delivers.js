@@ -13,7 +13,6 @@ exports.getDeliver = (req, res, next) => {
 	res
 		.status(200)
 		.json({ succes: true, msg: `Show a single deliver ${req.params.id}` });
-	console.log('Request Type: ', req.method);
 };
 
 // @desc Create a Single Deliver
@@ -21,7 +20,6 @@ exports.getDeliver = (req, res, next) => {
 // @access Private
 exports.createDeliver = (req, res, next) => {
 	res.status(200).json({ succes: true, msg: 'Create new deliver' });
-	console.log('Request Type: ', req.method);
 };
 
 // @desc Update a Single Deliver
@@ -31,7 +29,6 @@ exports.updateDeliver = (req, res, next) => {
 	res
 		.status(200)
 		.json({ succes: true, msg: `Update a single deliver ${req.params.id}` });
-	console.log('Request Type: ', req.method);
 };
 
 // @desc Update a Single Deliver
@@ -41,5 +38,4 @@ exports.deleteDeliver = (req, res, next) => {
 	res
 		.status(200)
 		.json({ succes: true, msg: `Delete a single deliver ${req.params.id}` });
-	console.log('Request Type: ', req.method);
 };
