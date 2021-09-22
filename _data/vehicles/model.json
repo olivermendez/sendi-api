@@ -1,0 +1,29 @@
+{
+    "totalCount": 6,
+    "items": [
+      {
+        "model": "CL",
+        "value": "cl"
+      },
+      {
+        "model": "Integra",
+        "value": "integra"
+      },
+      {
+        "model": "NSX",
+        "value": "nsx"
+      },
+      {
+        "model": "RL",
+        "value": "rl"
+      },
+      {
+        "model": "SLX",
+        "value": "slx"
+      },
+      {
+        "model": "TL",
+        "value": "tl"
+      }
+    ]
+  }

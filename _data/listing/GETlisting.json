@@ -1,0 +1,302 @@
+{
+    "status": {
+        "value": "Active",
+        "label": "Active",
+        "shortLabel": "Active"
+    },
+    "namedPrice": {
+        "value": 60.01,
+        "label": "$60.01",
+        "shortLabel": "$61",
+        "currencyType": {
+            "value": "USD",
+            "label": "US Dollar",
+            "shortLabel": "US Dollar"
+        }
+    },
+    "offerPrice": {
+        "offerType": {
+            "value": "Offer",
+            "label": "",
+            "shortLabel": ""
+        },
+        "value": 60.01,
+        "label": "$60.01",
+        "shortLabel": "$61",
+        "currencyType": {
+            "value": "USD",
+            "label": "US Dollar",
+            "shortLabel": "US Dollar"
+        }
+    },
+    "commodity": "Furniture",
+    "parentCommodity": "Household Goods",
+    "topLevelCommodity": "Household Goods",
+    "expiresOn": "2019-09-24T04:59:59Z",
+    "imageUrl": "https://staging.uship.com/public/images/icons/categories/114x138/1_114x138.png",
+    "isDefaultImage": true,
+    "checksum": "f28c5bd1a0181247",
+    "createdOn": "2019-09-23T20:38:31Z",
+    "activatedOn": "2019-09-23T20:38:31Z",
+    "lastUpdatedOn": "2019-09-23T20:38:31Z",
+    "minimumBidAmount": {
+        "value": 19.99,
+        "label": "$19.99",
+        "shortLabel": "$20",
+        "currencyType": {
+            "value": "USD",
+            "label": "US Dollar",
+            "shortLabel": "US Dollar"
+        }
+    },
+    "quoteRequestId": "5d892d47528015110051961a",
+    "commodityType": {
+        "value": "Furniture",
+        "label": "Furniture",
+        "shortLabel": "Furniture"
+    },
+    "parentCommodityType": {
+        "value": "HouseholdGoods",
+        "label": "Household Goods",
+        "shortLabel": "Household Goods"
+    },
+    "topLevelCommodityType": {
+        "value": "HouseholdGoods",
+        "label": "Household Goods",
+        "shortLabel": "Household Goods"
+    },
+    "serviceTypes": [
+        {
+            "value": "BlanketWrap",
+            "label": "Blanket Wrap",
+            "shortLabel": "Blanket Wrap"
+        }
+    ],
+    "listingId": 185798798,
+    "title": "Marble Top Side Table B-5940546",
+    "description": "**PLEASE CONFIRM YOU HAVE READ THESE DETAILS IN BID**:\r\n- Pickup is between 10:00 AM-5:00 PM Mon-Fri \r\n- Pickup is from a warehouse, ground level, no loading dock. \r\n- You MUST be able to load and unload the item(s) without the assistance of our employees or our customers. \r\n- You MUST use the BOL which can be found in My Shipments under the Assigned Tab. Print the BOL and fill out the necessary information. \r\n- You MUST make contact with the delivery customer at least 24 hours in advance. If you deliver an item less than 24 hours from pickup without the customer’s approval, you will not be paid in full. \r\n- Items can not be left outside unless consent is given from the customer. \r\n- Customers should be contacted between 7:30am-8:30pm based on the delivery timezone. \r\n- An enclosed trailer, box truck, or sprinter van is required for ALL deliveries.\r\n- Threshold delivery.\r\n- IF ANY OF THESE REQUIREMENTS ARE NOT MET, WE WILL NO LONGER BE ABLE TO WORK TOGETHER.\r\n*(please note that all weights are estimated)",
+    "route": {
+        "distance": {
+            "kilometers": 53.1082,
+            "label": "33 mi.",
+            "shortLabel": "33 mi."
+        },
+        "items": [
+            {
+                "address": {
+                    "streetAddress": "20 Terry Ave",
+                    "alternateStreetAddress": "",
+                    "majorMunicipality": "Burlington",
+                    "postalCode": "01803",
+                    "stateProvince": "MA",
+                    "stateProvinceLabel": "Massachusetts",
+                    "country": "US",
+                    "countryLabel": "United States",
+                    "latitude": 42.508545,
+                    "longitude": -71.201304,
+                    "label": "Burlington, MA 01803 US",
+                    "shortLabel": "Burlington, MA 01803 US",
+                    "type": {
+                        "value": "BusinessWithoutLoadingDockOrForklift",
+                        "label": "Business (without loading dock or forklift)",
+                        "shortLabel": "Business (without loading dock or forklift)"
+                    }
+                },
+                "contact": {
+                    "name": "",
+                    "phoneNumber": ""
+                },
+                "timeFrame": {
+                    "label": "Between 9/23/2019 - 9/23/2019",
+                    "shortLabel": "9/23 - 9/23",
+                    "earliestArrival": "2019-09-23T05:00:00Z",
+                    "latestArrival": "2019-09-23T05:00:00Z",
+                    "timeFrameType": {
+                        "value": "between",
+                        "label": "Between",
+                        "shortLabel": "Between"
+                    },
+                    "timeZone": "America/New_York"
+                },
+                "accessorials": []
+            },
+            {
+                "address": {
+                    "streetAddress": "28 E Nashua Rd",
+                    "majorMunicipality": "Windham",
+                    "postalCode": "03087",
+                    "stateProvince": "NH",
+                    "stateProvinceLabel": "New Hampshire",
+                    "country": "US",
+                    "countryLabel": "United States",
+                    "latitude": 42.801406,
+                    "longitude": -71.303561,
+                    "label": "Windham, NH 03087 US",
+                    "shortLabel": "Windham, NH 03087 US",
+                    "type": {
+                        "value": "Residence",
+                        "label": "Residence / Home Business",
+                        "shortLabel": "Residence / Home Business"
+                    }
+                },
+                "contact": {
+                    "name": "Jami Vetter jamie.vetter@gmail.com",
+                    "phoneNumber": "+17038357821"
+                },
+                "timeFrame": {
+                    "label": "Between 9/23/2019 - 9/23/2019",
+                    "shortLabel": "9/23 - 9/23",
+                    "earliestArrival": "2019-09-23T05:00:00Z",
+                    "latestArrival": "2019-09-23T05:00:00Z",
+                    "timeFrameType": {
+                        "value": "between",
+                        "label": "Between",
+                        "shortLabel": "Between"
+                    },
+                    "timeZone": "America/New_York"
+                },
+                "accessorials": []
+            }
+        ]
+    },
+    "lister": {
+        "userId": 121568292,
+        "displayName": "test500 K.",
+        "profileUrl": "/profile/121568292",
+        "feedback": {},
+        "aboutMe": "Hi, I am a shipper.",
+        "dateCreated": "2018-07-30T16:12:16Z",
+        "companyLocation": {},
+        "links": [
+            {
+                "rel": "Item",
+                "verb": "GET",
+                "href": "/v2/users/121568292/profile",
+                "title": "profile"
+            }
+        ]
+    },
+    "items": [
+        {
+            "title": "Marble Top Side Table 19BOS018-042",
+            "commodity": {
+                "value": "Furniture",
+                "label": "Furniture",
+                "shortLabel": "Furniture"
+            },
+            "attributes": {
+                "lengthInMeters": {
+                    "title": "Length",
+                    "value": 0.457,
+                    "label": "1 ft 6 in.",
+                    "shortLabel": "1 ft 6 in."
+                },
+                "widthInMeters": {
+                    "title": "Width",
+                    "value": 0.660,
+                    "label": "2 ft 2 in.",
+                    "shortLabel": "2 ft 2 in."
+                },
+                "heightInMeters": {
+                    "title": "Height",
+                    "value": 0.558,
+                    "label": "1 ft 10 in.",
+                    "shortLabel": "1 ft 10 in."
+                },
+                "weightInGrams": {
+                    "title": "Weight",
+                    "value": 40820.0,
+                    "label": "90 lbs",
+                    "shortLabel": "90 lbs"
+                },
+                "unitCount": {
+                    "title": "Quantity",
+                    "value": 1,
+                    "label": "1",
+                    "shortLabel": "1"
+                }
+            }
+        }
+    ],
+    "totalWeightInGrams": {
+        "value": 40820.0,
+        "label": "90 lbs",
+        "shortLabel": "90 lbs"
+    },
+    "attributes": {
+        "crated": {
+            "title": "Crated",
+            "value": false,
+            "label": "No",
+            "shortLabel": "No"
+        },
+        "stackable": {
+            "title": "Stackable",
+            "value": false,
+            "label": "No",
+            "shortLabel": "No"
+        },
+        "palletized": {
+            "title": "Palletized",
+            "value": false,
+            "label": "No",
+            "shortLabel": "No"
+        }
+    },
+    "links": [
+        {
+            "rel": "List",
+            "verb": "GET",
+            "href": "/v2/listings/185798798/attachments",
+            "title": "listingAttachments"
+        },
+        {
+            "rel": "Update",
+            "verb": "PUT",
+            "href": "/v2/listings/185798798/pickup",
+            "title": "pickup"
+        },
+        {
+            "rel": "Update",
+            "verb": "PUT",
+            "href": "/v2/listings/185798798/delivery",
+            "title": "delivery"
+        },
+        {
+            "rel": "List",
+            "verb": "GET",
+            "href": "/v2/listings/185798798/conversations",
+            "title": "listingconversations"
+        },
+        {
+            "rel": "Delete",
+            "verb": "DELETE",
+            "href": "/v2/listings/185798798",
+            "title": "deleteListing"
+        },
+        {
+            "rel": "Update",
+            "verb": "PUT",
+            "href": "/v2/listings/185798798",
+            "title": "updateListing"
+        },
+        {
+            "rel": "Create",
+            "verb": "POST",
+            "href": "/v2/listings/185798798?marketId=0",
+            "title": "listSimilarShipment"
+        },
+        {
+            "rel": "Item",
+            "verb": "GET",
+            "href": "/v2/listings/185798798",
+            "title": "viewListing"
+        },
+        {
+            "rel": "Update",
+            "verb": "PUT",
+            "href": "/v2/listings/185798798/pricingstatus",
+            "title": "unlist"
+        }
+    ]
+}

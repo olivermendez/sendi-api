@@ -1,0 +1,107 @@
+{
+  
+    "items": [
+  
+      {
+  
+        "value": "Residence",
+  
+        "label": "Residence",
+  
+        "shortLabel": "Residence"
+  
+      },
+  
+      {
+  
+        "value": "BusinessWithLoadingDockOrForklift",
+  
+        "label": "Business (with loading dock or forklift)",
+  
+        "shortLabel": "Business (with loading dock or forklift)"
+  
+      },
+  
+      {
+  
+        "value": "BusinessWithoutLoadingDockOrForklift",
+  
+        "label": "Business (without loading dock or forklift)",
+  
+        "shortLabel": "Business (without loading dock or forklift)"
+  
+      },
+  
+      {
+  
+        "value": "Port",
+  
+        "label": "Port",
+  
+        "shortLabel": "Port"
+  
+      },
+  
+      {
+  
+        "value": "ConstructionSite",
+  
+        "label": "Construction Site",
+  
+        "shortLabel": "Construction Site"
+  
+      },
+  
+      {
+  
+        "value": "TradeShowOrConvention",
+  
+        "label": "Trade Show / Convention Center",
+  
+        "shortLabel": "Trade Show / Convention Center"
+  
+      },
+  
+      {
+  
+        "value": "StorageFacility",
+  
+        "label": "Storage Facility",
+  
+        "shortLabel": "Storage Facility"
+  
+      },
+  
+      {
+  
+        "value": "MilitaryBase",
+  
+        "label": "Military Base",
+  
+        "shortLabel": "Military Base"
+  
+      },
+  
+      {
+  
+        "value": "Airport",
+  
+        "label": "Airport",
+  
+        "shortLabel": "Airport"
+  
+      },
+  
+      {
+  
+        "value": "OtherSecuredLocation",
+  
+        "label": "Other Secured or Limited Access Location",
+  
+        "shortLabel": "Other Secured or Limited Access Location"
+  
+      }
+  
+    ]
+  
+  }

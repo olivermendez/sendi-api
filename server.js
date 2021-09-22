@@ -2,38 +2,49 @@ const express = require('express');
 const dotenv = require('dotenv');
 const morgan = require('morgan');
 const colors = require('colors');
+const errorHandler = require('./middleware/error');
 const connectDB = require('./config/db');
 
 //load env vars
 dotenv.config({ path: './config/config.env' });
 
+//tuto: https://uship.developerhub.io/lookup-values/commodities
+//https://documenter.getpostman.com/view/8396530/TVzYeZ75#b1f9bde2-0801-4dec-938a-aca5b6ce0ab8
 //Routes files
-const delivers = require('./routes/delivers.js');
+const listings = require('./routes/listings.js');
+const commodities = require('./routes/commodities');
+const auth = require('./routes/auth');
+const logger = require('./middleware/logger');
 
-//Connect to database
+//Connection to database
 connectDB();
-
-//port
-const PORT = process.env.PORT || 5000;
 
 const app = express();
 
-//midleware
+//req body
+app.use(express.json());
+
+//middleware
+app.use(logger);
 
 // Dev loggin middleware
 if (process.env.NODE_ENV === 'developement') {
 	app.use(morgan('dev'));
 }
+//Routes Listing
+app.use('/api/v1/listings/', listings);
+app.use('/api/v1/auth/', auth);
+//Routes Commodities
+app.use('/api/v1/lookups/commodities/', commodities);
 
-app.use('/api/v1/delivers/', delivers);
+app.use(errorHandler);
 
 const server = app.listen(
-	PORT,
+	process.env.PORT,
 	console.log(`server running on localhost:${process.env.PORT}`.yellow.bold)
 );
 
-//handle unhandled promise rejections
-
+//Handle unhandled promise rejections
 process.on('unhandleRejection', (err, promise) => {
 	console.log(`unhandled Rejection: Error: ${err.message}`.red);
 	//conse server & exit procees.

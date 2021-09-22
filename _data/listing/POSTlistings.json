@@ -1,0 +1,64 @@
+{
+  "title": "Required (Cars & Light Trucks Listing) Title",
+  "description": "Provide optional details about the vehicle listing.",
+  "route": {
+      "items": [
+          {
+              "address": {
+                  "streetAddress": "10155 Montague St",
+                  "alternateStreetAddress": "Bldg 2, Suite 100",
+                  "majorMunicipality": "Tampa",
+                  "postalCode": "33626",
+                  "stateProvince": "FL",
+                  "country": "US",
+                  "latitude": 28.056858,
+                  "longitude": -82.605871,
+                  "type": "Residence",
+                  "timeZone": "America/New_York" 
+              },
+              "timeFrame": {
+                  "earliestArrival": "2014/08/08",
+                  "latestArrival": "2014/09/09",
+                  "timeFrameType": "after"
+                           }
+          },
+          {
+              "address": {
+                  "streetAddress": "1614 E Riverside Dr",
+                  "majorMunicipality": "Austin",
+                  "postalCode": "78741",
+                  "stateProvince": "TX",
+                  "country": "US",
+                  "latitude": 30.234123,
+                  "longitude": -97.718296,
+                  "type": "BusinessWithLoadingDockOrForklift"
+              },
+              "timeFrame": {
+                  "earliestArrival": "2021/09/09",
+                  "latestArrival": "2021/09/19",
+                  "timeFrameType": "on"
+               }
+          }
+      ]
+  },
+  "pricing": {
+      "namedPrice": {
+          "amount": 250,
+          "currencyType": "USD"
+      }
+  },
+  "items": [
+      {
+          "Title": "CLT Item Listing Title",
+          "Description": "2008 Honda Pilot", 
+          "Commodity": "CarsLightTrucks",
+          "Year": 2008,
+          "MakeName": "Honda",
+          "ModelName": "Pilot",
+          "IsRunning": true,
+          "IsConvertible": false,
+          "IsModified": false
+      }
+  ],
+  "serviceTypes": ["OpenTransport", "EnclosedTransport"]
+}
