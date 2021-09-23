@@ -111,6 +111,24 @@ const CreateListingSchema = new mongoose.Schema(
 		},
 
 		averageCost: Number,
+
+		attributes: {
+			lengthInMeters: {
+				type: String,
+			},
+			widthInMeters: {
+				type: String,
+			},
+			heightInMeters: {
+				type: String,
+			},
+			weightInGrams: {
+				type: String,
+			},
+			unitCount: {
+				type: Number,
+			},
+		},
 	},
 	{
 		toJSON: { virtuals: true },
