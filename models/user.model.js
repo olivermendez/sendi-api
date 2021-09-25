@@ -1,39 +1,54 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
+const bcrypt = require("bcryptjs");
+const jwt = require("jsonwebtoken");
 
 const UserSchema = mongoose.Schema({
-	name: {
-		type: String,
-		require: [true, 'Please add your name'],
-	},
-	username: {
-		type: String,
-		//require: true,
-		//unique: true,
-	},
-	email: {
-		type: String,
-		required: true,
-		unique: true,
-	},
+  name: {
+    type: String,
+    required: [true, "Please add your name"],
+  },
+  username: {
+    type: String,
+    required: [true, "Please add your username"],
+    unique: true,
+  },
+  email: {
+    type: String,
+    required: [true, "Please add your email"],
+    unique: true,
+  },
+  role: {
+    type: String,
+    enum: ["carrier", "shipper"],
+    default: "shipper",
+  },
+  password: {
+    type: String,
+    required: [true, "Plase add you password"],
+    select: false,
+    minlengh: 6,
+    select: false,
+  },
 
-	role: {
-		type: String,
-		enum: ['Carrier', 'Shipper'],
-		default: 'Shipper',
-	},
-	password: {
-		type: String,
-		required: [true, 'Plase add you password'],
-		select: false,
-	},
+  resetPasswordToken: String,
+  resetPasswordExpire: Date,
 
-	resetPasswordToken: String,
-	resetPasswordExpire: Date,
-
-	createdAt: {
-		type: String,
-		default: Date.now,
-	},
+  createdAt: {
+    type: Date,
+    default: Date.now,
+  },
 });
 
-module.exports = mongoose.model('User', UserSchema);
+//cryt the password
+UserSchema.pre("save", async function (next) {
+  const salt = await bcrypt.genSalt(10);
+  this.password = await bcrypt.hash(this.password, salt);
+});
+
+UserSchema.methods.getSignedJwtToken = function () {
+  return jwt.sign({ id: this._id }, process.env.JWT_SECRET, {
+    expiresIn: process.env.JWT_EXPIRE,
+  });
+};
+
+module.exports = mongoose.model("User", UserSchema);
