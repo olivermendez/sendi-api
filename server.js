@@ -4,6 +4,7 @@ const morgan = require("morgan");
 const colors = require("colors");
 const errorHandler = require("./middleware/error");
 const connectDB = require("./config/db");
+const cookieParser = require("cookie-parser");
 
 //load env vars
 dotenv.config({ path: "./config/config.env" });
@@ -23,6 +24,7 @@ const app = express();
 
 //req body
 app.use(express.json());
+app.use(cookieParser());
 
 //middleware
 app.use(logger);
