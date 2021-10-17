@@ -10,17 +10,17 @@ const {
   deleteListing,
 } = require("../controllers/listings");
 
-const { protect } = require("../middleware/protect.auth");
+const { protect, authorize } = require("../middleware/protect.auth");
 
 //Commodities
 //router.route('/').get(getCommodities);
 
 //Listings
-router.route("/").get(getAllListings).post(protect, createListing);
+router.route("/").get(protect, authorize('carrier'), getAllListings).post(protect, authorize('shipper'), createListing);
 router
   .route("/:id")
   .get(getListing)
-  .put(protect, updateListing)
-  .delete(protect, deleteListing);
+  .put(protect, authorize('shipper'), updateListing)
+  .delete(protect, authorize('shipper'), deleteListing);
 
 module.exports = router;

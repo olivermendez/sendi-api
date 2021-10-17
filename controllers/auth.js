@@ -14,7 +14,7 @@ exports.userRegister = asyncHandler(async (req, res, next) => {
 });
 
 // @desc Login User
-// @route GET /api/v1/auth/login
+// @route POST /api/v1/auth/login
 // @access Public
 exports.userLogin = asyncHandler(async (req, res, next) => {
   const { email, password } = req.body;
@@ -56,6 +56,7 @@ const sendTokenResponse = (user, statusCode, res) => {
   if (process.env.NODE_ENV === "production") {
     options.secure = true;
   }
+  
 
   res
     .status(statusCode)
