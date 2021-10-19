@@ -6,9 +6,23 @@ const ErrorResponse = require("../utils/errorResponse");
 // @route POST /api/v1/auth/register
 // @access Public
 exports.userRegister = asyncHandler(async (req, res, next) => {
-  const { name, username, email, password, role } = req.body;
+  const { 
+    name, 
+    username, 
+    email, 
+    password, 
+    role,
+    cedula, 
+    phone } = req.body;
   //Create user
-  const user = await User.create({ name, username, email, password, role });
+  const user = await User.create({ 
+    name, 
+    username, 
+    email, 
+    password, 
+    role, 
+    phone,
+    cedula });
 
   sendTokenResponse(user, 200, res);
 });

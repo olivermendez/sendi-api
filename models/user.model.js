@@ -22,6 +22,16 @@ const UserSchema = mongoose.Schema({
     enum: ["carrier", "shipper"],
     default: "shipper",
   },
+  phone:{
+    type: String,
+    required: [true, "Please add your phone number"],
+    unique: true,
+  },
+  cedula:{
+    type:String,
+    required: [true, "Please add your cedula"],
+    unique: true,
+  },
   password: {
     type: String,
     required: [true, "Plase add you password"],
