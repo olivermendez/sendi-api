@@ -17,6 +17,7 @@ const commodities = require("./routes/commodities");
 const auth = require("./routes/auth");
 const logger = require("./middleware/logger");
 const vehicle = require("./routes/vehicles");
+const payment = require("./routes/payment");
 
 //Connection to database
 connectDB();
@@ -39,6 +40,9 @@ app.use("/api/v1/listings/", listings);
 
 //Route Vehicle
 app.use("/api/v1/vehicles/", vehicle);
+
+//Route Payment
+app.use("/api/v1/payment/", payment);
 
 //Route: Authentication
 app.use("/api/v1/auth/", auth);
