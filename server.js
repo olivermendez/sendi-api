@@ -16,6 +16,7 @@ const listings = require("./routes/listings.js");
 const commodities = require("./routes/commodities");
 const auth = require("./routes/auth");
 const logger = require("./middleware/logger");
+const vehicle = require("./routes/vehicles");
 
 //Connection to database
 connectDB();
@@ -35,6 +36,9 @@ if (process.env.NODE_ENV === "developement") {
 }
 //Routes Listing
 app.use("/api/v1/listings/", listings);
+
+//Route Vehicle
+app.use("/api/v1/vehicles/", vehicle);
 
 //Route: Authentication
 app.use("/api/v1/auth/", auth);

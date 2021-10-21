@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
 
-//const { getCommodities } = require('../controllers/commodities');
 const {
   getAllListings,
   getListing,
@@ -11,9 +10,6 @@ const {
 } = require("../controllers/listings");
 
 const { protect, authorize } = require("../middleware/protect.auth");
-
-//Commodities
-//router.route('/').get(getCommodities);
 
 //Listings
 router.route("/").get(protect, authorize('carrier'), getAllListings).post(protect, authorize('shipper'), createListing);

@@ -1,15 +1,16 @@
 const mongoose = require('mongoose');
 
-const VehicleSchema = mongoose.Schema({
+const VehicleSchema = new mongoose.Schema({
 	year: {
 		type: Number,
-		required: true,
-		//min: 2000,
-		//max: 2022,
+		required: [true, 'Plase add car year'],
+		min: 2000,
+		max: 2022,
 	},
 	make: {
 		type: String,
 		require: true,
+		
 		//enum: ['Acura', 'Honda'],
 	},
 	model: {
@@ -18,14 +19,20 @@ const VehicleSchema = mongoose.Schema({
 		//enum: ['Acura', 'Honda'],
 	},
 
-	licence: {
+	imageUrl: {
 		type: String,
 		required: true,
 	},
 
 	createdAt: {
-		type: String,
+		type: Date,
 		default: Date.now,
+	},
+
+	user: {
+		type: mongoose.Schema.ObjectId,
+		ref: 'User',
+		required: true,
 	},
 });
 
