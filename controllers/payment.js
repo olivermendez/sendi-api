@@ -31,3 +31,18 @@ exports.deletePaymentMethod = asyncHandler(async (req, res, next) => {
 
   res.status(201).json({ success: true, data: newPayment });
 });
+
+
+// @desc Create a Vehicle
+// @route POST /api/v1/vehicle/
+// @access Private
+exports.getPaymentMethodsByUserId = asyncHandler(async (req, res, next) => {
+  let query = await Payment.find({ user: req.params.id });
+
+  if (!query) {
+    return next(
+      new errorResponse(`You dont have payment methods: ${req.params.id}`, 404)
+    );
+  }
+  res.status(201).json({ success: true, yourPaymentsMethods: query });
+});
