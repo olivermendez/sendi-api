@@ -8,8 +8,10 @@ const asyncHandler = require("../middleware/async");
 exports.getAllListings = asyncHandler(async (req, res, next) => {
   const getlistings = await Listing.find();
   res
-    .status(201)
-    .json({ success: true, count: getlistings.length, data: getlistings });
+  .status(201)
+  .json({ totalListing: getlistings.length, results: getlistings });
+
+
 });
 
 // @desc Get a Single Listing

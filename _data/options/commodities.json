@@ -1,16 +1,16 @@
 {
   
-    "options": [
+    "commodities": [
   
       {
   
-        "value": "HouseholdGoods",
+        "value": "HouseholdItems",
   
-        "label": "Household Goods",
+        "label": "Household Items",
   
-        "shortLabel": "Household Goods",
+        "shortLabel": "Furnitures, Appliances",
 
-        "route": "/house-hold",
+        "route": "household.png",
   
         "subCommodities": [
   
@@ -48,9 +48,9 @@
   
           {
   
-            "value": "LawnOutdoorEquipment",
+            "value": "OutdoorEquipment",
   
-            "label": "Lawn & Outdoor Equipment"
+            "label": "Outdoor Equipment"
   
           },
   
@@ -64,17 +64,17 @@
   
           {
   
-            "value": "HouseholdPlants",
+            "value": "Pianos",
   
-            "label": "Household Plants"
+            "label": "Pianos"
   
           },
   
           {
   
-            "value": "OtherHouseholdGoods",
+            "value": "PoolTables",
   
-            "label": "Other Household Goods"
+            "label": "Pool Tables"
   
           }
   
@@ -82,117 +82,6 @@
   
       },
   
-      {
-  
-        "value": "HouseholdOfficeMoves",
-  
-        "label": "Household & Office Moves",
-  
-        "shortLabel": "Household & Office Moves",
-
-        "route": "/house-and-offices-moves",
-  
-        "subCommodities": [
-  
-          {
-  
-            "value": "SmallStudio",
-  
-            "label": "Small Studio"
-  
-          },
-  
-          {
-  
-            "value": "LargeStudioor1BRApartment",
-  
-            "label": "Large Studio or 1 BR Apt"
-  
-          },
-  
-          {
-  
-            "value": "TwoBRApt",
-  
-            "label": "2 BR Apt"
-  
-          },
-  
-          {
-  
-            "value": "ThreeBRAptorTwoBRhouse",
-  
-            "label": "3 BR Apt or 2 BR House"
-  
-          },
-  
-          {
-  
-            "value": "ThreeBRhouse",
-  
-            "label": "3 BR House"
-  
-          },
-  
-          {
-  
-            "value": "FourBRhouse",
-  
-            "label": "4 BR House"
-  
-          },
-  
-          {
-  
-            "value": "FivePlusBRhouse",
-  
-            "label": "5+ BR House"
-  
-          },
-  
-          {
-  
-            "value": "Office",
-  
-            "label": "Office"
-  
-          },
-  
-          {
-  
-            "value": "MobileHomes",
-  
-            "label": "Mobile Homes"
-  
-          },
-  
-          {
-  
-            "value": "TradeshowEquipment2",
-  
-            "label": "Tradeshow Equipment"
-  
-          },
-  
-          {
-  
-            "value": "TrailerHomes",
-  
-            "label": "Trailer Homes"
-  
-          },
-  
-          {
-  
-            "value": "OtherHouseholdOfficeMoves",
-  
-            "label": "Other Household & Office Moves"
-  
-          }
-  
-        ]
-  
-      },
   
       {
   
@@ -202,7 +91,7 @@
   
         "shortLabel": "Vehicles",
 
-        "route": "/vehicles",
+        "route": "cars.png",
   
         "subCommodities": [
   
@@ -214,13 +103,7 @@
   
           },
   
-          {
-  
-            "value": "RecreationalVehiclesRVs",
-  
-            "label": "Recreational Vehicles (RVs)"
-  
-          },
+          
   
           {
   
@@ -230,13 +113,7 @@
   
           },
   
-          {
-  
-            "value": "TrailerHomes2",
-  
-            "label": "Trailer Homes"
-  
-          },
+        
   
           {
   
@@ -252,22 +129,6 @@
   
             "label": "Airplanes"
   
-          },
-  
-          {
-  
-            "value": "AntiqueVehicles",
-  
-            "label": "Antique Vehicles"
-  
-          },
-  
-          {
-  
-            "value": "OtherVehicles",
-  
-            "label": "Other Vehicles"
-  
           }
   
         ]
@@ -282,7 +143,7 @@
   
         "shortLabel": "Motorcycles & Power Sports",
 
-        "route": "/motocycles",
+        "route": "motorcycles.png",
   
         "subCommodities": [
   
@@ -338,7 +199,7 @@
   
         "shortLabel": "Boats",
 
-        "route": "/boats",
+        "route": "boats.png",
   
         "subCommodities": [
   
@@ -394,7 +255,7 @@
   
         "shortLabel": "Heavy Equipment",
 
-        "route": "/heavy-equipment",
+        "route": "heavy-equipment.png",
   
         "subCommodities": [
   
@@ -594,7 +455,7 @@
   
         "shortLabel": "Pets",
 
-        "route": "/pets",
+        "route": "animals.png",
 
       
         "subCommodities": [
@@ -635,333 +496,6 @@
   
       },
   
-      {
-  
-        "value": "SpecialCareItems",
-  
-        "label": "Special Care Items",
-  
-        "shortLabel": "Special Care Items",
-
-        "route": "/spacial-care-items",
-  
-        "subCommodities": [
-  
-          {
-  
-            "value": "Antiques",
-  
-            "label": "Antiques"
-  
-          },
-  
-          {
-  
-            "value": "Art",
-  
-            "label": "Art"
-  
-          },
-  
-          {
-  
-            "value": "GlassBreakables",
-  
-            "label": "Glass/Breakables"
-  
-          },
-  
-          {
-  
-            "value": "Pianos",
-  
-            "label": "Pianos"
-  
-          },
-  
-          {
-  
-            "value": "PoolTables",
-  
-            "label": "Pool Tables"
-  
-          },
-  
-          {
-  
-            "value": "OtherSpecialCareItems",
-  
-            "label": "Other Special Care Items"
-  
-          }
-  
-        ]
-  
-      },
-  
-      {
-  
-        "value": "BusinessIndustrialGoods",
-  
-        "label": "Business & Industrial Goods",
-  
-        "shortLabel": "Business & Industrial Goods",
-
-        "route": "/business-goods",
-  
-        "subCommodities": [
-  
-          {
-  
-            "value": "WoodPaperProducts",
-  
-            "label": "Wood & Paper Products"
-  
-          },
-  
-          {
-  
-            "value": "LiquidsGasesChemicals",
-  
-            "label": "Liquids, Gases & Chemicals"
-  
-          },
-  
-          {
-  
-            "value": "ConstructionMaterialEquipmentMachinery",
-  
-            "label": "Construction Material, Equipment & Machinery"
-  
-          },
-  
-          {
-  
-            "value": "StoneMetalsMinerals",
-  
-            "label": "Stone, Metals & Minerals"
-  
-          },
-  
-          {
-  
-            "value": "CommoditiesDryBulk",
-  
-            "label": "Commodities Dry Bulk"
-  
-          },
-  
-          {
-  
-            "value": "GeneralFreight",
-  
-            "label": "General Freight"
-  
-          },
-  
-          {
-  
-            "value": "MixedFreight",
-  
-            "label": "Mixed Freight"
-  
-          },
-  
-          {
-  
-            "value": "Utilities",
-  
-            "label": "Utilities"
-  
-          },
-  
-          {
-  
-            "value": "PharmaceuticalProducts",
-  
-            "label": "Pharmaceutical Products"
-  
-          },
-  
-          {
-  
-            "value": "Fertilizers",
-  
-            "label": "Fertilizers"
-  
-          },
-  
-          {
-  
-            "value": "PlasticsRubber",
-  
-            "label": "Plastics & Rubber"
-  
-          },
-  
-          {
-  
-            "value": "TextilesLeather",
-  
-            "label": "Textiles, Leather"
-  
-          },
-  
-          {
-  
-            "value": "MiscellaneousManufacturedProducts",
-  
-            "label": "Miscellaneous Manufactured Products"
-  
-          },
-  
-          {
-  
-            "value": "TradeshowEquipment",
-  
-            "label": "Tradeshow Equipment"
-  
-          },
-  
-          {
-  
-            "value": "OfficeEquipment",
-  
-            "label": "Office Equipment"
-  
-          },
-  
-          {
-  
-            "value": "OtherBusinessIndustrialGoods",
-  
-            "label": "Other Business & Industrial Goods"
-  
-          }
-  
-        ]
-  
-      },
-  
-      {
-  
-        "value": "FoodAgriculturalGoods",
-  
-        "label": "Food & Agricultural Goods",
-  
-        "shortLabel": "Food & Agricultural Goods",
-
-        "route": "/food-goods",
-  
-        "subCommodities": [
-  
-          {
-  
-            "value": "FreshProduce",
-  
-            "label": "Fresh Produce"
-  
-          },
-  
-          {
-  
-            "value": "RefrigeratedFood",
-  
-            "label": "Refrigerated Food"
-  
-          },
-  
-          {
-  
-            "value": "MeatFishSeafood",
-  
-            "label": "Meat, Fish, Seafood"
-  
-          },
-  
-          {
-  
-            "value": "AgriculturalFarmSupplies",
-  
-            "label": "Agricultural/Farm Supplies"
-  
-          },
-  
-          {
-  
-            "value": "GrainFeedHay",
-  
-            "label": "Grain, Feed, Hay"
-  
-          },
-  
-          {
-  
-            "value": "CerealGrainsincludingseed",
-  
-            "label": "Cereal Grains (including seed)"
-  
-          },
-  
-          {
-  
-            "value": "AnimalFeedProductsofAnimalOrigin",
-  
-            "label": "Animal Feed & Products of Animal Origin"
-  
-          },
-  
-          {
-  
-            "value": "MilledGrainProductsPreparationsandBakeryProducts",
-  
-            "label": "Milled Grain Products & Preparations, and Bakery Products"
-  
-          },
-  
-          {
-  
-            "value": "Beverages",
-  
-            "label": "Beverages"
-  
-          },
-  
-          {
-  
-            "value": "AlcoholicBeverages",
-  
-            "label": "Alcoholic Beverages"
-  
-          },
-  
-          {
-  
-            "value": "OtherPreparedFoodstuffsandFatsandOils",
-  
-            "label": "Other Prepared Foodstuffs, and Fats and Oils"
-  
-          },
-  
-          {
-  
-            "value": "TobaccoProducts",
-  
-            "label": "Tobacco Products"
-  
-          },
-  
-          {
-  
-            "value": "OtherFoodAgriculture",
-  
-            "label": "Other Food & Agriculture"
-  
-          }
-  
-        ]
-  
-      },
   
       {
   
@@ -971,7 +505,7 @@
   
         "shortLabel": "Other",
 
-        "route": "/other-items",
+        "route": "other.png",
   
         "subCommodities": [
   

@@ -94,6 +94,7 @@ const ListingSchema = new mongoose.Schema(
 
 		comodity:{
 			type: String,
+			default: "Furniture"
 		},
 
 		widthInMeters: {
