@@ -1,14 +1,11 @@
-
-//const errorResponse = require("../../utils/errorResponse");
 const asyncHandler = require("../middleware/async");
-//const Listings = require("../../models/Listings.model");
 const Furniture = require("../models/furniture");
 const Listing = require('../models/Listings.model');
 const ErrorResponse = require("../utils/errorResponse");
 
 // @desc Create a single Furniture's detail
 // @route POST /api/v1/listings/:listingId/furniture
-// @access Public
+// @access private
 exports.createFurnitures = asyncHandler(async (req, res, next) => {
 
   req.body.listing = req.params.listingId;
@@ -26,7 +23,7 @@ exports.createFurnitures = asyncHandler(async (req, res, next) => {
 
 
 
-// @desc Get All Listings by Listing
+// @desc Get all furniture
 // @route GET /api/v1/listings/:listingId/furniture
 // @access Public
 exports.getFurniture = asyncHandler(async (req, res, next) => {
@@ -41,7 +38,6 @@ exports.getFurniture = asyncHandler(async (req, res, next) => {
   }
 
   const furnitures = await query;
-
 
 
   res.status(200).json({
