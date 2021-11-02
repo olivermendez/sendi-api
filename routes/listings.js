@@ -1,5 +1,7 @@
 const express = require("express");
-const router = express.Router();
+
+
+
 
 const {
   getAllListings,
@@ -7,7 +9,17 @@ const {
   createListing,
   updateListing,
   deleteListing,
+  
 } = require("../controllers/listings");
+
+const furnitureRouter = require('./furnitures');
+
+
+const router = express.Router();
+
+
+//re-route into other resource routers
+router.use('/:listingId/furniture', furnitureRouter);
 
 const { protect, authorize } = require("../middleware/protect.auth");
 

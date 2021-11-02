@@ -2,12 +2,14 @@ const express = require("express");
 const router = express.Router();
 
 
-const {addPaymentMethod, deletePaymentMethod, getPaymentMethodsByUserId } = require("../controllers/payment");
+const {addPaymentMethod, deletePaymentMethod, getPaymentMethodsByUserId, createFurnitures } = require("../controllers/payment");
 
 const { protect, authorize } = require("../middleware/protect.auth");
 
 
 router.route('/').post(protect, authorize('carrier'), addPaymentMethod);
+
+router.route('/furniture').post(protect, authorize('carrier'), createFurnitures);
 
 router.route("/:id").delete(protect, authorize('carrier'), deletePaymentMethod);
 router.route('/:id').get(getPaymentMethodsByUserId);

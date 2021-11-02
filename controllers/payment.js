@@ -1,14 +1,16 @@
 const Payment = require("../models/payment");
 const errorResponse = require("../utils/errorResponse");
 const asyncHandler = require("../middleware/async");
+const Furniture = require('../models/furniture');
 
 // @desc Add a Payment Method
 // @route POST /api/v1/payment/
 // @access Private ['carrier', 'shipper']
 exports.addPaymentMethod = asyncHandler(async (req, res, next) => {
   req.body.user = req.user.id;
+  console.log(req.body.user);
 
-  console.log(req.body);
+  //console.log(req.body);
 
   const newPayment = await Payment.create(req.body);
   res.status(201).json({ success: true, data: newPayment });
@@ -45,4 +47,13 @@ exports.getPaymentMethodsByUserId = asyncHandler(async (req, res, next) => {
     );
   }
   res.status(201).json({ success: true, yourPaymentsMethods: query });
+});
+
+
+exports.createFurnitures = asyncHandler(async (req, res, next) => {
+  req.body.user = req.user.id;
+
+  const FurnitureDetail = await Furniture.create(req.body);
+
+  res.status(201).json({ success: true, data: FurnitureDetail });
 });
