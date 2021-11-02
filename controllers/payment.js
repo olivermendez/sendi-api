@@ -48,12 +48,3 @@ exports.getPaymentMethodsByUserId = asyncHandler(async (req, res, next) => {
   }
   res.status(201).json({ success: true, yourPaymentsMethods: query });
 });
-
-
-exports.createFurnitures = asyncHandler(async (req, res, next) => {
-  req.body.user = req.user.id;
-
-  const FurnitureDetail = await Furniture.create(req.body);
-
-  res.status(201).json({ success: true, data: FurnitureDetail });
-});
