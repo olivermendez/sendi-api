@@ -9,11 +9,13 @@ const {
 } = require("../controllers/listings");
 
 const furnitureRouter = require("./furnitures");
+const locationRouter = require("./locations");
 
 const router = express.Router();
 
 //re-route into other resource routers
 router.use("/:listingId/furniture", furnitureRouter);
+router.use("/:listingId/location", locationRouter);
 
 const { protect, authorize } = require("../middleware/protect.auth");
 
