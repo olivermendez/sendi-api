@@ -1,18 +1,17 @@
 const asyncHandler = require("../middleware/async");
 const Furniture = require("../models/furniture");
-const Listing = require('../models/Listings.model');
+const Listing = require("../models/Listings.model");
 const ErrorResponse = require("../utils/errorResponse");
 
 // @desc Create a single Furniture's detail
 // @route POST /api/v1/listings/:listingId/furniture
 // @access private
 exports.createFurnitures = asyncHandler(async (req, res, next) => {
-
   req.body.listing = req.params.listingId;
 
   const listing = await Listing.findById(req.params.listingId);
 
-  if(!listing){
+  if (!listing) {
     return next(new ErrorResponse(`No listing found`, 400));
   }
 
@@ -21,30 +20,26 @@ exports.createFurnitures = asyncHandler(async (req, res, next) => {
   res.status(201).json({ success: true, data: furniture });
 });
 
-
-
 // @desc Get all furniture
 // @route GET /api/v1/listings/:listingId/furniture
 // @access Public
 exports.getFurniture = asyncHandler(async (req, res, next) => {
-  
   let query;
 
-  if(req.params.listingId){
+  if (req.params.listingId) {
     console.log(req.params.listingId);
-    query = Furniture.find({listing: req.params.listingId});
-  }else{
+    query = Furniture.find({ listing: req.params.listingId }).populate(
+      "listing"
+    );
+  } else {
     query = Furniture.find();
   }
 
   const furnitures = await query;
 
-
   res.status(200).json({
     success: true,
     count: furnitures.length,
-    data: furnitures
-  })
-
+    data: furnitures,
+  });
 });
-

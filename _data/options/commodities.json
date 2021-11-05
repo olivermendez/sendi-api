@@ -40,14 +40,6 @@
   
           {
   
-            "value": "ArcadeEquipment",
-  
-            "label": "Arcade Equipment"
-  
-          },
-  
-          {
-  
             "value": "OutdoorEquipment",
   
             "label": "Outdoor Equipment"
@@ -89,7 +81,7 @@
   
         "label": "Vehicles",
   
-        "shortLabel": "Vehicles",
+        "shortLabel": "Cars, Trailers, Parts, Airplanes",
 
         "route": "cars.png",
   
@@ -197,7 +189,7 @@
   
         "label": "Boats",
   
-        "shortLabel": "Boats",
+        "shortLabel": "Sail Boats, Parts, Watercraft",
 
         "route": "boats.png",
   

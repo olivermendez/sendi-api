@@ -1,7 +1,7 @@
 const Payment = require("../models/payment");
 const errorResponse = require("../utils/errorResponse");
 const asyncHandler = require("../middleware/async");
-const Furniture = require('../models/furniture');
+const Furniture = require("../models/furniture");
 
 // @desc Add a Payment Method
 // @route POST /api/v1/payment/
@@ -34,9 +34,8 @@ exports.deletePaymentMethod = asyncHandler(async (req, res, next) => {
   res.status(201).json({ success: true, data: newPayment });
 });
 
-
 // @desc Create a Vehicle
-// @route POST /api/v1/vehicle/
+// @route POST /api/v1/vehicle/:id
 // @access Private
 exports.getPaymentMethodsByUserId = asyncHandler(async (req, res, next) => {
   let query = await Payment.find({ user: req.params.id });

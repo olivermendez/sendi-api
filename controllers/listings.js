@@ -8,10 +8,8 @@ const asyncHandler = require("../middleware/async");
 exports.getAllListings = asyncHandler(async (req, res, next) => {
   const getlistings = await Listing.find();
   res
-  .status(201)
-  .json({ totalListing: getlistings.length, results: getlistings });
-
-
+    .status(201)
+    .json({ totalListing: getlistings.length, results: getlistings });
 });
 
 // @desc Get a Single Listing
@@ -37,11 +35,13 @@ exports.createListing = asyncHandler(async (req, res, next) => {
 
   req.body.user = req.user.id;
 
-  const publishedListing = await Listing.findOne({ user: req.user.id });
+  const publishedListing = await Listing.findOne({
+    user: req.user.id,
+  }).populate("user");
 
   const createlisting = await Listing.create(req.body);
 
-  res.status(201).json({ success: true, data: createlisting });
+  res.status(201).json({ success: true, listing: createlisting });
 });
 
 // @desc Update a Single Listing
