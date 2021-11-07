@@ -18,7 +18,8 @@ const auth = require("./routes/auth");
 const logger = require("./middleware/logger");
 const vehicle = require("./routes/vehicles");
 const payment = require("./routes/payment");
-const furniture = require('./routes/furnitures');
+const furniture = require("./routes/furnitures");
+const bodytype = require("./routes/bodytypes");
 
 //Connection to database
 connectDB();
@@ -50,14 +51,11 @@ app.use("/api/v1/auth/", auth);
 //Routes Commodities
 app.use("/api/v1/lookups/commodities/", commodities);
 
-
+app.use("/api/v1/vehicle/bodytypes", bodytype);
 
 //Categories
 //Furnitures
 app.use("/api/v1/furnitures", furniture);
-
-
-
 
 app.use(errorHandler);
 

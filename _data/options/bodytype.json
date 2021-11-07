@@ -1,0 +1,127 @@
+{
+  "bodytypes": [
+    {
+      "value": "Coupe",
+
+      "image": "photo path",
+
+      "details": [
+        {
+          "dimensions": "4.62m x 1.42m x 1.78m",
+
+          "weight": "1450kg"
+        }
+      ]
+    },
+
+    {
+      "value": "Hatchback",
+
+      "image": "photo path",
+
+      "details": [
+        {
+          "dimensions": "4.65m x 1.50m x 1.80m",
+
+          "weight": "1350kg"
+        }
+      ]
+    },
+
+    {
+      "value": "Microcar",
+
+      "image": "photo path",
+
+      "details": [
+        {
+          "dimensions": "2.79m x 1.42m x 1.40m",
+
+          "weight": "550kg"
+        }
+      ]
+    },
+
+    {
+      "value": "Minivan",
+
+      "image": "photo path",
+
+      "details": [
+        {
+          "dimensions": "5.08m x 1.75m x 1.96m",
+
+          "weight": "2050kg"
+        }
+      ]
+    },
+
+    {
+      "value": "Pickup Full Size",
+
+      "image": "photo path",
+
+      "details": [
+        {
+          "dimensions": "5.97m x 1.96m x 1.93m",
+
+          "weight": "2250kg"
+        }
+      ]
+    },
+
+    {
+      "value": "Pickup Heavy Duty",
+
+      "image": "photo path",
+
+      "details": [
+        {
+          "dimensions": "6.38m x 2.08m x 1.96m",
+
+          "weight": "2700kg"
+        }
+      ]
+    },
+
+    {
+      "value": "Pickup Mid Size",
+
+      "image": "photo path",
+
+      "details": [
+        {
+          "dimensions": "5.23m x 1.83m x 1.73m",
+
+          "weight": "1800kg"
+        }
+      ]
+    },
+    {
+      "value": "Sedan",
+
+      "image": "photo path",
+
+      "details": [
+        {
+          "dimensions": "4.65m x 1.42m x 1.80m",
+
+          "weight": "1600kg"
+        }
+      ]
+    },
+    {
+      "value": "Station Wagon",
+
+      "image": "photo path",
+
+      "details": [
+        {
+          "dimensions": "4.62m x 1.45m x 1.78m",
+
+          "weight": "1600kg"
+        }
+      ]
+    }
+  ]
+}
