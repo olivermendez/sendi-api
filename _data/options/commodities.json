@@ -1,534 +1,393 @@
 {
-  
-    "commodities": [
-  
-      {
-  
-        "value": "HouseholdItems",
-  
-        "label": "Household Items",
-  
-        "shortLabel": "Furnitures, Appliances",
+  "commodities": [
+    {
+      "value": "HouseholdItems",
 
-        "route": "household.png",
-  
-        "subCommodities": [
-  
-          {
-  
-            "value": "Furniture",
-  
-            "label": "Furniture"
-  
-          },
-  
-          {
-  
-            "value": "HomeElectronics",
-  
-            "label": "Home Electronics"
-  
-          },
-  
-          {
-  
-            "value": "Appliances",
-  
-            "label": "Appliances"
-  
-          },
-  
-          {
-  
-            "value": "OutdoorEquipment",
-  
-            "label": "Outdoor Equipment"
-  
-          },
-  
-          {
-  
-            "value": "SportingEquipment",
-  
-            "label": "Sporting Equipment"
-  
-          },
-  
-          {
-  
-            "value": "Pianos",
-  
-            "label": "Pianos"
-  
-          },
-  
-          {
-  
-            "value": "PoolTables",
-  
-            "label": "Pool Tables"
-  
-          }
-  
-        ]
-  
-      },
-  
-  
-      {
-  
-        "value": "Vehicles",
-  
-        "label": "Vehicles",
-  
-        "shortLabel": "Cars, Trailers, Parts, Airplanes",
+      "label": "Household Items",
 
-        "route": "cars.png",
-  
-        "subCommodities": [
-  
-          {
-  
-            "value": "CarsLightTrucks",
-  
-            "label": "Cars & Light Trucks"
-  
-          },
-  
-          
-  
-          {
-  
-            "value": "Trailers",
-  
-            "label": "Trailers"
-  
-          },
-  
-        
-  
-          {
-  
-            "value": "VehicleParts",
-  
-            "label": "Vehicle Parts"
-  
-          },
-  
-          {
-  
-            "value": "Airplanes",
-  
-            "label": "Airplanes"
-  
-          }
-  
-        ]
-  
-      },
-  
-      {
-  
-        "value": "MotorcyclesPowerSports",
-  
-        "label": "Motorcycles & Power Sports",
-  
-        "shortLabel": "Motorcycles & Power Sports",
+      "shortLabel": "Furnitures, Appliances",
 
-        "route": "motorcycles.png",
-  
-        "subCommodities": [
-  
-          {
-  
-            "value": "MotorcyclesMopeds",
-  
-            "label": "Motorcycles & Mopeds"
-  
-          },
-  
-          {
-  
-            "value": "AllTerrainVehicles",
-  
-            "label": "All Terrain Vehicles"
-  
-          },
-  
-          {
-  
-            "value": "GoCartsDuneBuggies",
-  
-            "label": "Go Carts & Dune Buggies"
-  
-          },
-  
-          {
-  
-            "value": "Snowmobiles",
-  
-            "label": "Snowmobiles"
-  
-          },
-  
-          {
-  
-            "value": "OtherPowerSports",
-  
-            "label": "Other Power Sports"
-  
-          }
-  
-        ]
-  
-      },
-  
-      {
-  
-        "value": "Boats",
-  
-        "label": "Boats",
-  
-        "shortLabel": "Sail Boats, Parts, Watercraft",
+      "route": "household.png",
 
-        "route": "boats.png",
-  
-        "subCommodities": [
-  
-          {
-  
-            "value": "PowerBoats",
-  
-            "label": "Power Boats"
-  
-          },
-  
-          {
-  
-            "value": "SailBoats",
-  
-            "label": "Sail Boats"
-  
-          },
-  
-          {
-  
-            "value": "PersonalWatercraft",
-  
-            "label": "Personal Watercraft"
-  
-          },
-  
-          {
-  
-            "value": "BoatParts",
-  
-            "label": "Boat Parts"
-  
-          },
-  
-          {
-  
-            "value": "OtherBoats",
-  
-            "label": "Other Boats"
-  
-          }
-  
-        ]
-  
-      },
-  
-      {
-  
-        "value": "HeavyEquipment",
-  
-        "label": "Heavy Equipment",
-  
-        "shortLabel": "Heavy Equipment",
+      "subCommodities": [
+        {
+          "value": "Furniture",
 
-        "route": "heavy-equipment.png",
-  
-        "subCommodities": [
-  
-          {
-  
-            "value": "Agricultural",
-  
-            "label": "Agricultural"
-  
-          },
-  
-          {
-  
-            "value": "AsphaltConcrete",
-  
-            "label": "Asphalt/Concrete"
-  
-          },
-  
-          {
-  
-            "value": "Attachments",
-  
-            "label": "Attachments"
-  
-          },
-  
-          {
-  
-            "value": "Compactors",
-  
-            "label": "Compactors"
-  
-          },
-  
-          {
-  
-            "value": "Cranes",
-  
-            "label": "Cranes"
-  
-          },
-  
-          {
-  
-            "value": "Drills",
-  
-            "label": "Drills"
-  
-          },
-  
-          {
-  
-            "value": "Environmental",
-  
-            "label": "Environmental"
-  
-          },
-  
-          {
-  
-            "value": "Excavators",
-  
-            "label": "Excavators"
-  
-          },
-  
-          {
-  
-            "value": "Generators",
-  
-            "label": "Generators"
-  
-          },
-  
-          {
-  
-            "value": "HeavyConstruction",
-  
-            "label": "Heavy Construction"
-  
-          },
-  
-          {
-  
-            "value": "IndustrialPlant",
-  
-            "label": "Industrial Plant"
-  
-          },
-  
-          {
-  
-            "value": "Lifts",
-  
-            "label": "Lifts"
-  
-          },
-  
-          {
-  
-            "value": "LightConstruction",
-  
-            "label": "Light Construction"
-  
-          },
-  
-          {
-  
-            "value": "Logging",
-  
-            "label": "Logging"
-  
-          },
-  
-          {
-  
-            "value": "Mining",
-  
-            "label": "Mining"
-  
-          },
-  
-          {
-  
-            "value": "OilPipeline",
-  
-            "label": "Oil & Pipeline"
-  
-          },
-  
-          {
-  
-            "value": "Railroad",
-  
-            "label": "Railroad"
-  
-          },
-  
-          {
-  
-            "value": "Structures",
-  
-            "label": "Structures"
-  
-          },
-  
-          {
-  
-            "value": "Tractors",
-  
-            "label": "Tractors"
-  
-          },
-  
-          {
-  
-            "value": "Trailers2",
-  
-            "label": "Trailers"
-  
-          },
-  
-          {
-  
-            "value": "Trucks",
-  
-            "label": "Trucks"
-  
-          },
-  
-          {
-  
-            "value": "Utility",
-  
-            "label": "Utility"
-  
-          },
-  
-          {
-  
-            "value": "OtherHeavyEquipment",
-  
-            "label": "Other Heavy Equipment"
-  
-          }
-  
-        ]
-  
-      },
-  
-      {
-  
-        "value": "Pets",
-  
-        "label": "Pets",
-  
-        "shortLabel": "Pets",
+          "label": "Furniture"
+        },
 
-        "route": "animals.png",
+        {
+          "value": "HomeElectronics",
 
-      
-        "subCommodities": [
-  
-          {
-  
-            "value": "Cats",
-  
-            "label": "Cats"
-  
-          },
-  
-          {
-  
-            "value": "Dogs",
-  
-            "label": "Dogs"
-  
-          },
-  
-          {
-  
-            "value": "LiveFish",
-  
-            "label": "Live Fish"
-  
-          },
-  
-          {
-  
-            "value": "OtherPetsLivestock",
-  
-            "label": "Other Pets & Livestock"
-  
-          }
-  
-        ]
-  
-      },
-  
-  
-      {
-  
-        "value": "Other",
-  
-        "label": "Other",
-  
-        "shortLabel": "Other",
+          "label": "Home Electronics"
+        },
 
-        "route": "other.png",
-  
-        "subCommodities": [
-  
-          {
-  
-            "value": "SmallPackages",
-  
-            "label": "Small Packages"
-  
-          },
-  
-          {
-  
-            "value": "Junk",
-  
-            "label": "Junk"
-  
-          },
-  
-          {
-  
-            "value": "Passengers",
-  
-            "label": "Passengers"
-  
-          }
-  
-        ]
-  
-      }
-  
-    ]
-  
+        {
+          "value": "Appliances",
+
+          "label": "Appliances"
+        },
+
+        {
+          "value": "OutdoorEquipment",
+
+          "label": "Outdoor Equipment"
+        },
+
+        {
+          "value": "SportingEquipment",
+
+          "label": "Sporting Equipment"
+        },
+
+        {
+          "value": "Pianos",
+
+          "label": "Pianos"
+        },
+
+        {
+          "value": "PoolTables",
+
+          "label": "Pool Tables"
+        }
+      ]
+    },
+
+    {
+      "value": "Vehicles",
+
+      "label": "Vehicles",
+
+      "shortLabel": "Cars, Trailers, Parts, Airplanes",
+
+      "route": "cars.png",
+
+      "subCommodities": [
+        {
+          "value": "CarsLightTrucks",
+
+          "label": "Cars & Light Trucks"
+        },
+
+        {
+          "value": "Trailers",
+
+          "label": "Trailers"
+        },
+
+        {
+          "value": "VehicleParts",
+
+          "label": "Vehicle Parts"
+        },
+
+        {
+          "value": "Airplanes",
+
+          "label": "Airplanes"
+        }
+      ]
+    },
+
+    {
+      "value": "MotorcyclesPowerSports",
+
+      "label": "Motorcycles & Power Sports",
+
+      "shortLabel": "Motorcycles & Power Sports",
+
+      "route": "motorcycles.png",
+
+      "subCommodities": [
+        {
+          "value": "MotorcyclesMopeds",
+
+          "label": "Motorcycles & Mopeds"
+        },
+
+        {
+          "value": "AllTerrainVehicles",
+
+          "label": "All Terrain Vehicles"
+        },
+
+        {
+          "value": "GoCartsDuneBuggies",
+
+          "label": "Go Carts & Dune Buggies"
+        },
+
+        {
+          "value": "Snowmobiles",
+
+          "label": "Snowmobiles"
+        },
+
+        {
+          "value": "OtherPowerSports",
+
+          "label": "Other Power Sports"
+        }
+      ]
+    },
+
+    {
+      "value": "Boats",
+
+      "label": "Boats",
+
+      "shortLabel": "Sail Boats, Parts, Watercraft",
+
+      "route": "boats.png",
+
+      "subCommodities": [
+        {
+          "value": "PowerBoats",
+
+          "label": "Power Boats"
+        },
+
+        {
+          "value": "SailBoats",
+
+          "label": "Sail Boats"
+        },
+
+        {
+          "value": "PersonalWatercraft",
+
+          "label": "Personal Watercraft"
+        },
+
+        {
+          "value": "BoatParts",
+
+          "label": "Boat Parts"
+        },
+
+        {
+          "value": "OtherBoats",
+
+          "label": "Other Boats"
+        }
+      ]
+    },
+
+    {
+      "value": "HeavyEquipment",
+
+      "label": "Heavy Equipment",
+
+      "shortLabel": "Heavy Equipment",
+
+      "route": "heavy-equipment.png",
+
+      "subCommodities": [
+        {
+          "value": "Agricultural",
+
+          "label": "Agricultural"
+        },
+
+        {
+          "value": "AsphaltConcrete",
+
+          "label": "Asphalt/Concrete"
+        },
+
+        {
+          "value": "Attachments",
+
+          "label": "Attachments"
+        },
+
+        {
+          "value": "Compactors",
+
+          "label": "Compactors"
+        },
+
+        {
+          "value": "Cranes",
+
+          "label": "Cranes"
+        },
+
+        {
+          "value": "Drills",
+
+          "label": "Drills"
+        },
+
+        {
+          "value": "Environmental",
+
+          "label": "Environmental"
+        },
+
+        {
+          "value": "Excavators",
+
+          "label": "Excavators"
+        },
+
+        {
+          "value": "Generators",
+
+          "label": "Generators"
+        },
+
+        {
+          "value": "HeavyConstruction",
+
+          "label": "Heavy Construction"
+        },
+
+        {
+          "value": "IndustrialPlant",
+
+          "label": "Industrial Plant"
+        },
+
+        {
+          "value": "Lifts",
+
+          "label": "Lifts"
+        },
+
+        {
+          "value": "LightConstruction",
+
+          "label": "Light Construction"
+        },
+
+        {
+          "value": "Logging",
+
+          "label": "Logging"
+        },
+
+        {
+          "value": "Mining",
+
+          "label": "Mining"
+        },
+
+        {
+          "value": "OilPipeline",
+
+          "label": "Oil & Pipeline"
+        },
+
+        {
+          "value": "Railroad",
+
+          "label": "Railroad"
+        },
+
+        {
+          "value": "Structures",
+
+          "label": "Structures"
+        },
+
+        {
+          "value": "Tractors",
+
+          "label": "Tractors"
+        },
+
+        {
+          "value": "Trailers2",
+
+          "label": "Trailers"
+        },
+
+        {
+          "value": "Trucks",
+
+          "label": "Trucks"
+        },
+
+        {
+          "value": "Utility",
+
+          "label": "Utility"
+        },
+
+        {
+          "value": "OtherHeavyEquipment",
+
+          "label": "Other Heavy Equipment"
+        }
+      ]
+    },
+
+    {
+      "value": "Pets",
+
+      "label": "Pets",
+
+      "shortLabel": "Pets",
+
+      "route": "animals.png",
+
+      "subCommodities": [
+        {
+          "value": "Cats",
+
+          "label": "Cats"
+        },
+
+        {
+          "value": "Dogs",
+
+          "label": "Dogs"
+        },
+
+        {
+          "value": "LiveFish",
+
+          "label": "Live Fish"
+        },
+
+        {
+          "value": "OtherPetsLivestock",
+
+          "label": "Other Pets & Livestock"
+        }
+      ]
+    },
+
+    {
+      "value": "Other",
+
+      "label": "Other",
+
+      "shortLabel": "Other",
+
+      "route": "other.png",
+
+      "subCommodities": [
+        {
+          "value": "SmallPackages",
+
+          "label": "Small Packages"
+        },
+
+        {
+          "value": "Junk",
+
+          "label": "Junk"
+        },
+
+        {
+          "value": "Passengers",
+
+          "label": "Passengers"
+        }
+      ]
+    }
+  ]
 }
