@@ -1,14 +1,36 @@
 const mongoose = require("mongoose");
 
-const VehicleQuestionSchema = new mongoose.Schema({
-  make: {
+const VehicleFormSchema = new mongoose.Schema({
+  bodytype: {
     type: String,
-    default: "Furniture",
   },
-  model: {
+  dimensions: {
     type: String,
     //require: true,
   },
+  weight: {
+    type: String,
+  },
+
+  operable: {
+    type: Boolean,
+    default: true,
+  },
+  convertible: {
+    type: Boolean,
+    default: false,
+  },
+
+  modified: {
+    type: Boolean,
+    default: false,
+  },
+
+  createdAt: {
+    type: Date,
+    default: Date.now,
+  },
+
   listing: {
     type: mongoose.Schema.ObjectId,
     ref: "Listing",
@@ -16,4 +38,4 @@ const VehicleQuestionSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("Vehicles", VehicleQuestionSchema);
+module.exports = mongoose.model("VehicleForm", VehicleFormSchema);

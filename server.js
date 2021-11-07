@@ -21,8 +21,23 @@ const payment = require("./routes/payment");
 const furniture = require("./routes/furnitures");
 const bodytype = require("./routes/bodytypes");
 
+//Categories Forms
+
 //Connection to database
 connectDB();
+
+process.once("SIGUSR2", function () {
+  process.kill(process.pid, "SIGUSR2");
+});
+
+process.once("EADDRINUSE", function () {
+  process.kill(process.pid, "EADDRINUSE");
+});
+
+process.on("SIGINT", function () {
+  // this is only called on ctrl+c, not restart
+  process.kill(process.pid, "SIGINT");
+});
 
 const app = express();
 
@@ -53,8 +68,7 @@ app.use("/api/v1/lookups/commodities/", commodities);
 
 app.use("/api/v1/vehicle/bodytypes", bodytype);
 
-//Categories
-//Furnitures
+//Categories form
 app.use("/api/v1/furnitures", furniture);
 
 app.use(errorHandler);
