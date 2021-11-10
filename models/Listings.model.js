@@ -4,6 +4,13 @@ const geocoder = require("../utils/geocoder");
 
 const ListingSchema = new mongoose.Schema(
   {
+    status: {
+      type: String,
+      enum: ["active", "booked", "closed", "completed", "archived", "saved"],
+      default: "active",
+      required: true,
+    },
+
     title: {
       type: String,
       required: [true, "Please add a name"],
