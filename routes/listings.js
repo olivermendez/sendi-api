@@ -6,6 +6,7 @@ const {
   createListing,
   updateListing,
   deleteListing,
+  getListingByUserId,
 } = require("../controllers/listings");
 
 const furnitureRouter = require("./furnitures");
@@ -31,5 +32,7 @@ router
   .get(getListing)
   .put(protect, authorize("shipper"), updateListing)
   .delete(protect, authorize("shipper"), deleteListing);
+
+router.route("/user/:id").get(getListingByUserId);
 
 module.exports = router;

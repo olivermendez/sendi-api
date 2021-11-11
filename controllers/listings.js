@@ -99,3 +99,20 @@ exports.deleteListing = asyncHandler(async (req, res, next) => {
 
   res.status(201).json({ success: true, msg: "Deleted" });
 });
+
+// @desc get listing by User
+// @route GET /api/v1/Listings/user/:id
+// @access Private
+exports.getListingByUserId = asyncHandler(async (req, res, next) => {
+  let listing = await Listing.find({ user: req.params.id });
+
+  if (!listing) {
+    return next(
+      new errorResponse(`Listing not found with id: ${req.params.id}`, 404)
+    );
+  }
+
+  res
+    .status(201)
+    .json({ success: true, cantidad: listing.length, data: listing });
+});
