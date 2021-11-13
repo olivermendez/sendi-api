@@ -1,6 +1,8 @@
 const mongoose = require("mongoose");
 const slugify = require("slugify");
 const geocoder = require("../utils/geocoder");
+const Furniture = require("./furniture");
+const locations = require("./locations");
 
 const ListingSchema = new mongoose.Schema(
   {
@@ -25,17 +27,25 @@ const ListingSchema = new mongoose.Schema(
       maxlength: [500, "Description can not be more than 500 characters"],
     },
 
-    photo: {
+    quantity: {
       type: String,
-      default: "no-photo.jpg",
-    },
-    price: {
-      type: Number,
+      default: "1",
     },
 
+    photo: {
+      type: String,
+      default: "https://via.placeholder.com/50x50.png",
+    },
     comodity: {
       type: String,
-      default: "Furniture",
+      enum: ["boast", "vehicles", "pets", "other", "motorcycles", "household"],
+      default: "household",
+    },
+
+    subcomodity: {
+      type: String,
+      //enum: ["furniture", "vehicles", "pets", "other", "motorcycles", "household"],
+      default: "furniture",
     },
 
     createdAt: {
@@ -53,6 +63,24 @@ const ListingSchema = new mongoose.Schema(
     toObject: { virtuals: true },
   }
 );
+
+// Cascade delete courses when a listing is deleted
+ListingSchema.pre("remove", async function (next) {
+  console.log(`Listing removed ${this._id}`);
+  const funiture = await Furniture.deleteMany({ listing: this._id });
+
+  //const location = await locations.deleteMany({ listing: this._id });
+
+  //await this.model("VehicleForm").deleteMany({ listing: this._id });
+  next();
+});
+
+ListingSchema.virtual("furnitures", {
+  ref: "Furnitures",
+  localField: "_id",
+  foreignField: "listing",
+  justOne: false,
+});
 
 // Create listing slug from name
 //ListingSchema.pre('save', function (next) {

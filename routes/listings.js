@@ -7,6 +7,7 @@ const {
   updateListing,
   deleteListing,
   getListingByUserId,
+  getListingByUserIdByState,
 } = require("../controllers/listings");
 
 const furnitureRouter = require("./furnitures");
@@ -34,5 +35,7 @@ router
   .delete(protect, authorize("shipper"), deleteListing);
 
 router.route("/user/:id").get(getListingByUserId);
+
+router.route("/user/:id/:status").get(getListingByUserIdByState);
 
 module.exports = router;

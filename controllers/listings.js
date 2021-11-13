@@ -100,7 +100,7 @@ exports.deleteListing = asyncHandler(async (req, res, next) => {
   res.status(201).json({ success: true, msg: "Deleted" });
 });
 
-// @desc get listing by User
+// @desc get listing by User ACTIVED
 // @route GET /api/v1/Listings/user/:id
 // @access Private
 exports.getListingByUserId = asyncHandler(async (req, res, next) => {
@@ -112,7 +112,23 @@ exports.getListingByUserId = asyncHandler(async (req, res, next) => {
     );
   }
 
-  res
-    .status(201)
-    .json({ success: true, cantidad: listing.length, data: listing });
+  res.status(201).json({ success: true, listing: listing });
+});
+
+// @desc get listing by User BY STATE
+// @route GET /api/v1/Listings/user/:id/status
+// @access Private
+exports.getListingByUserIdByState = asyncHandler(async (req, res, next) => {
+  let listing = await Listing.find({
+    user: req.params.id,
+    status: req.params.status,
+  });
+
+  if (!listing) {
+    return next(
+      new errorResponse(`Listing not found with id: ${req.params.id}`, 404)
+    );
+  }
+
+  res.status(201).json({ success: true, listing: listing });
 });
