@@ -7,9 +7,7 @@ const asyncHandler = require("../middleware/async");
 // @access Public
 exports.getAllListings = asyncHandler(async (req, res, next) => {
   const getlistings = await Listing.find();
-  res
-    .status(201)
-    .json({ totalListing: getlistings.length, results: getlistings });
+  res.status(201).json({ qty: getlistings.length, listing: getlistings });
 });
 
 // @desc Get a Single Listing

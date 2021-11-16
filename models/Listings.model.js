@@ -34,7 +34,8 @@ const ListingSchema = new mongoose.Schema(
 
     photo: {
       type: String,
-      default: "https://via.placeholder.com/50x50.png",
+      default:
+        "https://luxloungeefr.com/wp-content/uploads/2015/03/blue-custom.png",
     },
     comodity: {
       type: String,

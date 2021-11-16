@@ -13,43 +13,57 @@
         {
           "value": "Furniture",
 
-          "label": "Furniture"
+          "label": "Furniture",
+
+          "image": "furniture.png"
         },
 
         {
           "value": "HomeElectronics",
 
-          "label": "Home Electronics"
+          "label": "Home Electronics",
+
+          "image": "home-electronics.png"
         },
 
         {
           "value": "Appliances",
 
-          "label": "Appliances"
+          "label": "Appliances",
+
+          "image": "appliances.png"
         },
 
         {
           "value": "OutdoorEquipment",
 
-          "label": "Outdoor Equipment"
+          "label": "Outdoor Equipment",
+
+          "image": "outdoor.png"
         },
 
         {
           "value": "SportingEquipment",
 
-          "label": "Sporting Equipment"
+          "label": "Sporting Equipment",
+
+          "image": "sporting.png"
         },
 
         {
           "value": "Pianos",
 
-          "label": "Pianos"
+          "label": "Pianos",
+
+          "image": "piano.png"
         },
 
         {
           "value": "PoolTables",
 
-          "label": "Pool Tables"
+          "label": "Pool Tables",
+
+          "image": "pool.png"
         }
       ]
     },
@@ -59,7 +73,7 @@
 
       "label": "Vehicles",
 
-      "shortLabel": "Cars, Trailers, Parts, Airplanes",
+      "shortLabel": "Cars, Boats, Motorcycles, RVs, Parts",
 
       "route": "cars.png",
 
@@ -67,25 +81,59 @@
         {
           "value": "CarsLightTrucks",
 
-          "label": "Cars & Light Trucks"
-        },
+          "label": "Cars & Light Trucks",
 
-        {
-          "value": "Trailers",
-
-          "label": "Trailers"
+          "image": "car.png"
         },
 
         {
           "value": "VehicleParts",
 
-          "label": "Vehicle Parts"
+          "label": "Vehicle Parts",
+          "image": "vehicle_parts.png"
         },
 
         {
-          "value": "Airplanes",
+          "value": "ATVS",
 
-          "label": "Airplanes"
+          "label": "ATVS & Power Sports",
+
+          "image": "atvs.png"
+        },
+        {
+          "value": "Motorcycles",
+
+          "label": "Motorcycles & Mopeds",
+
+          "image": "motor.png"
+        },
+        {
+          "value": "PowerBoast",
+
+          "label": "Power Boast",
+
+          "image": "powerboats.png"
+        },
+        {
+          "value": "SailBoast",
+
+          "label": "SailBoast",
+
+          "image": "sailboats.png"
+        },
+        {
+          "value": "PersonalWaterCrafts",
+
+          "label": "Personal Watercrafts & Other Boast",
+
+          "image": "watercraft.png"
+        },
+        {
+          "value": "CommercialTrucks",
+
+          "label": "Commercial Trucks",
+
+          "image": "trucks.png"
         }
       ]
     },
@@ -327,7 +375,7 @@
     {
       "value": "Pets",
 
-      "label": "Pets",
+      "label": "Animals",
 
       "shortLabel": "Pets",
 
@@ -347,45 +395,9 @@
         },
 
         {
-          "value": "LiveFish",
+          "value": "Horses",
 
-          "label": "Live Fish"
-        },
-
-        {
-          "value": "OtherPetsLivestock",
-
-          "label": "Other Pets & Livestock"
-        }
-      ]
-    },
-
-    {
-      "value": "Other",
-
-      "label": "Other",
-
-      "shortLabel": "Other",
-
-      "route": "other.png",
-
-      "subCommodities": [
-        {
-          "value": "SmallPackages",
-
-          "label": "Small Packages"
-        },
-
-        {
-          "value": "Junk",
-
-          "label": "Junk"
-        },
-
-        {
-          "value": "Passengers",
-
-          "label": "Passengers"
+          "label": "Horses"
         }
       ]
     }
