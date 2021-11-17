@@ -20,6 +20,7 @@ const vehicle = require("./routes/vehicles");
 const payment = require("./routes/payment");
 const furniture = require("./routes/furnitures");
 const bodytype = require("./routes/bodytypes");
+const motorbodytypes = require("./routes/motorbodytypes");
 
 //Categories Forms
 
@@ -67,6 +68,8 @@ app.use("/api/v1/auth/", auth);
 app.use("/api/v1/lookups/commodities/", commodities);
 
 app.use("/api/v1/vehicle/bodytypes", bodytype);
+
+app.use("/api/v1/motor/bodytypes", motorbodytypes);
 
 //Categories form
 app.use("/api/v1/furnitures", furniture);

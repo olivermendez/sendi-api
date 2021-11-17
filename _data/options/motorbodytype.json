@@ -1,0 +1,51 @@
+{
+  "bodytypesmotor": [
+    {
+      "value": "Cabin",
+
+      "image": "cabin.png",
+
+      "details": {
+        "dimensions": "3.27m x 1.05m x 1.40m",
+
+        "weight": "465kg"
+      }
+    },
+
+    {
+      "value": "Cruiser",
+
+      "image": "cruiser.png",
+
+      "details": {
+        "dimensions": "2.40m x 0.90m x 1.20m",
+
+        "weight": "287kg"
+      }
+    },
+
+    {
+      "value": "Dual-Sport",
+
+      "image": "dual-sport.png",
+
+      "details": {
+        "dimensions": "2.21m x 0.87m x 1.36m",
+
+        "weight": "179kg"
+      }
+    },
+
+    {
+      "value": "Moped",
+
+      "image": "moped.png",
+
+      "details": {
+        "dimensions": "1.72m x 0.63m x 1.04m",
+
+        "weight": "60kg"
+      }
+    }
+  ]
+}
