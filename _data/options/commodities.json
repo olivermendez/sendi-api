@@ -124,7 +124,7 @@
         {
           "value": "PersonalWaterCrafts",
 
-          "label": "Personal Watercrafts & Other Boast",
+          "label": "Personal Watercrafts",
 
           "image": "watercraft.png"
         },
@@ -176,48 +176,6 @@
           "value": "OtherPowerSports",
 
           "label": "Other Power Sports"
-        }
-      ]
-    },
-
-    {
-      "value": "Boats",
-
-      "label": "Boats",
-
-      "shortLabel": "Sail Boats, Parts, Watercraft",
-
-      "route": "boats.png",
-
-      "subCommodities": [
-        {
-          "value": "PowerBoats",
-
-          "label": "Power Boats"
-        },
-
-        {
-          "value": "SailBoats",
-
-          "label": "Sail Boats"
-        },
-
-        {
-          "value": "PersonalWatercraft",
-
-          "label": "Personal Watercraft"
-        },
-
-        {
-          "value": "BoatParts",
-
-          "label": "Boat Parts"
-        },
-
-        {
-          "value": "OtherBoats",
-
-          "label": "Other Boats"
         }
       ]
     },
@@ -377,7 +335,7 @@
 
       "label": "Animals",
 
-      "shortLabel": "Pets",
+      "shortLabel": "Dogs, Cats, Horses",
 
       "route": "animals.png",
 
@@ -385,19 +343,25 @@
         {
           "value": "Cats",
 
-          "label": "Cats"
+          "label": "Cats",
+
+          "image": "cat.png"
         },
 
         {
           "value": "Dogs",
 
-          "label": "Dogs"
+          "label": "Dogs",
+
+          "image": "dog.png"
         },
 
         {
           "value": "Horses",
 
-          "label": "Horses"
+          "label": "Horses",
+
+          "image": "horses.png"
         }
       ]
     }

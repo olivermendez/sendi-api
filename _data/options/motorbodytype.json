@@ -46,6 +46,63 @@
 
         "weight": "60kg"
       }
+    },
+
+    {
+      "value": "Off-Road",
+
+      "image": "off-road.png",
+
+      "details": {
+        "dimensions": "2.15m x 0.71m x 1.26m",
+
+        "weight": "128kg"
+      }
+    },
+
+    {
+      "value": "Scooter",
+
+      "image": "scooter.png",
+
+      "details": {
+        "dimensions": "2.01m x 0.75m x 1.22m",
+
+        "weight": "155kg"
+      }
+    },
+    {
+      "value": "Sport Bike",
+
+      "image": "sport-bike.png",
+
+      "details": {
+        "dimensions": "2.10m x 0.77m x 1.12m",
+
+        "weight": "195kg"
+      }
+    },
+    {
+      "value": "Standard",
+
+      "image": "standard.png",
+
+      "details": {
+        "dimensions": "2.08m x 0.80m x 1.13m",
+
+        "weight": "192kg"
+      }
+    },
+    {
+      "value": "Touring",
+
+      "image": "touring.png",
+
+      "details": {
+        "dimensions": "2.34m x 1.00m x 1.20m",
+
+        "weight": "299kg"
+      }
     }
   ]
 }
