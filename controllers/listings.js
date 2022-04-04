@@ -130,3 +130,21 @@ exports.getListingByUserIdByState = asyncHandler(async (req, res, next) => {
 
   res.status(201).json({ success: true, listing: listing });
 });
+
+// @desc get listing by DriverId and BY STATE
+// @route GET /api/v1/Listings/driver/:id/status
+// @access Private
+exports.getListingByDriverIdByState = asyncHandler(async (req, res, next) => {
+  let listing = await Listing.find({
+    driverId: req.params.id,
+    status: req.params.status,
+  });
+
+  if (!listing) {
+    return next(
+      new errorResponse(`Listing not found with id: ${req.params.id}`, 404)
+    );
+  }
+
+  res.status(201).json({ qty: listing.length, listing: listing });
+});

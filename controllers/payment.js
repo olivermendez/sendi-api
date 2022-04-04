@@ -34,9 +34,9 @@ exports.deletePaymentMethod = asyncHandler(async (req, res, next) => {
   res.status(201).json({ success: true, data: newPayment });
 });
 
-// @desc Create a Vehicle
-// @route POST /api/v1/vehicle/:id
-// @access Private
+// @desc get Payment Method By UserId
+// @route GET /api/v1/payment/
+// @access Private ['carrier', 'shipper']
 exports.getPaymentMethodsByUserId = asyncHandler(async (req, res, next) => {
   let query = await Payment.find({ user: req.params.id });
 

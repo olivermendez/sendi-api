@@ -19,3 +19,19 @@ exports.createLocations = asyncHandler(async (req, res, next) => {
 
   res.status(201).json({ success: true, data: locations });
 });
+
+// @desc Get a Single Listing location by listing
+// @route GET /api/v1/listings/:listingId/location
+// @access Public
+exports.getLocationByListingId = asyncHandler(async (req, res, next) => {
+  const getlocation = await Location.find({
+    listing: req.params.listingId,
+  });
+
+  if (!getlocation) {
+    return next(
+      new errorResponse(`Location not found with id: ${req.params.id}`, 404)
+    );
+  }
+  res.status(201).json({ success: true, data: getlocation });
+});

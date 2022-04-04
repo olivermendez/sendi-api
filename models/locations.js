@@ -3,6 +3,16 @@ const geocoder = require("../utils/geocoder");
 
 const LocationsSchema = new mongoose.Schema(
   {
+    price: {
+      type: Number,
+    },
+    deliverTime: {
+      type: String,
+    },
+    category: {
+      type: String,
+      default: "regular",
+    },
     addressFrom: {
       type: String,
       required: [true, "Please add an address"],

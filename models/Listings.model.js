@@ -49,6 +49,10 @@ const ListingSchema = new mongoose.Schema(
       default: "furniture",
     },
 
+    driverId: {
+      type: String,
+    },
+
     createdAt: {
       type: Date,
       default: Date.now,

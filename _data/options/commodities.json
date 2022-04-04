@@ -120,62 +120,6 @@
           "label": "SailBoast",
 
           "image": "sailboats.png"
-        },
-        {
-          "value": "PersonalWaterCrafts",
-
-          "label": "Personal Watercrafts",
-
-          "image": "watercraft.png"
-        },
-        {
-          "value": "CommercialTrucks",
-
-          "label": "Commercial Trucks",
-
-          "image": "trucks.png"
-        }
-      ]
-    },
-
-    {
-      "value": "MotorcyclesPowerSports",
-
-      "label": "Motorcycles & Power Sports",
-
-      "shortLabel": "Motorcycles & Power Sports",
-
-      "route": "motorcycles.png",
-
-      "subCommodities": [
-        {
-          "value": "MotorcyclesMopeds",
-
-          "label": "Motorcycles & Mopeds"
-        },
-
-        {
-          "value": "AllTerrainVehicles",
-
-          "label": "All Terrain Vehicles"
-        },
-
-        {
-          "value": "GoCartsDuneBuggies",
-
-          "label": "Go Carts & Dune Buggies"
-        },
-
-        {
-          "value": "Snowmobiles",
-
-          "label": "Snowmobiles"
-        },
-
-        {
-          "value": "OtherPowerSports",
-
-          "label": "Other Power Sports"
         }
       ]
     },
