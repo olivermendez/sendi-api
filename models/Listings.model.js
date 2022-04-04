@@ -8,7 +8,7 @@ const ListingSchema = new mongoose.Schema(
   {
     status: {
       type: String,
-      enum: ["active", "booked", "closed", "completed", "archived", "saved"],
+      enum: ["active", "booked", "closed", "delivered", "archived", "saved"],
       default: "active",
       required: true,
     },
@@ -39,7 +39,15 @@ const ListingSchema = new mongoose.Schema(
     },
     comodity: {
       type: String,
-      enum: ["boast", "vehicles", "pets", "other", "motorcycles", "household"],
+      enum: [
+        "boast",
+        "vehicles",
+        "pets",
+        "other",
+        "motorcycles",
+        "household",
+        "animals",
+      ],
       default: "household",
     },
 

@@ -54,6 +54,8 @@ exports.updateListing = asyncHandler(async (req, res, next) => {
     );
   }
 
+  /*
+
   //Make sure if user if the owner
   if (listing.user.toString() !== req.user.id) {
     return next(
@@ -63,6 +65,8 @@ exports.updateListing = asyncHandler(async (req, res, next) => {
       )
     );
   }
+
+  */
 
   listing = await Listing.findByIdAndUpdate(req.params.id, req.body, {
     new: true,

@@ -24,23 +24,11 @@ exports.createVehicleForm = asyncHandler(async (req, res, next) => {
 // @desc Get all furniture
 // @route GET /api/v1/listings/:listingId/furniture
 // @access Public
-exports.getFurniture = asyncHandler(async (req, res, next) => {
-  let query;
+exports.getVehicleDetails = asyncHandler(async (req, res, next) => {
+  let details = await VehicleForm.find({ listing: req.params.listingId });
 
-  if (req.params.listingId) {
-    console.log(req.params.listingId);
-    query = Furniture.find({ listing: req.params.listingId }).populate(
-      "listing"
-    );
-  } else {
-    query = Furniture.find();
+  if (!details) {
+    return next(new ErrorResponse(`No details found`, 400));
   }
-
-  const furnitures = await query;
-
-  res.status(200).json({
-    success: true,
-    count: furnitures.length,
-    data: furnitures,
-  });
+  res.status(201).json({ success: true, details: details });
 });

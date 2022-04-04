@@ -24,22 +24,10 @@ exports.createFurnitures = asyncHandler(async (req, res, next) => {
 // @route GET /api/v1/listings/:listingId/furniture
 // @access Public
 exports.getFurniture = asyncHandler(async (req, res, next) => {
-  let query;
+  let furniture = await Furniture.find({ listing: req.params.listingId });
 
-  if (req.params.listingId) {
-    console.log(req.params.listingId);
-    query = Furniture.find({ listing: req.params.listingId }).populate(
-      "listing"
-    );
-  } else {
-    query = Furniture.find();
+  if (!furniture) {
+    return next(new ErrorResponse(`No details found`, 400));
   }
-
-  const furnitures = await query;
-
-  res.status(200).json({
-    success: true,
-    count: furnitures.length,
-    data: furnitures,
-  });
+  res.status(201).json({ success: true, furniture: furniture });
 });

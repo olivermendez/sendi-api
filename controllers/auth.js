@@ -6,23 +6,17 @@ const ErrorResponse = require("../utils/errorResponse");
 // @route POST /api/v1/auth/register
 // @access Public
 exports.userRegister = asyncHandler(async (req, res, next) => {
-  const { 
-    name, 
-    username, 
-    email, 
-    password, 
-    role,
-    cedula, 
-    phone } = req.body;
+  const { name, username, email, password, role, cedula, phone } = req.body;
   //Create user
-  const user = await User.create({ 
-    name, 
-    username, 
-    email, 
-    password, 
-    role, 
+  const user = await User.create({
+    name,
+    username,
+    email,
+    password,
+    role,
     phone,
-    cedula });
+    cedula,
+  });
 
   sendTokenResponse(user, 200, res);
 });
@@ -63,9 +57,10 @@ exports.userLogin = asyncHandler(async (req, res, next) => {
 
   //sendTokenResponse(user, 200, res);
 
-  res.status(200).cookie("token", token, options).json({ token: token, user: user });
-
-  
+  res
+    .status(200)
+    .cookie("token", token, options)
+    .json({ token: token, user: user });
 });
 
 //get token from model, and create cookie and send response
@@ -83,7 +78,6 @@ const sendTokenResponse = (user, statusCode, res) => {
   if (process.env.NODE_ENV === "production") {
     options.secure = true;
   }
-  
 
   res
     .status(statusCode)
@@ -96,6 +90,17 @@ const sendTokenResponse = (user, statusCode, res) => {
 // @access Private
 exports.getMe = asyncHandler(async (req, res, next) => {
   const user = await User.findById(req.user.id);
+
+  //sendTokenResponse(user, 200, res);
+
+  res.status(200).json({ success: true, user: user });
+});
+
+// @desc Get User by Id
+// @route POST /api/v1/auth/user/:id
+// @access Private
+exports.getUserById = asyncHandler(async (req, res, next) => {
+  const user = await User.findById(req.params.id);
 
   //sendTokenResponse(user, 200, res);
 

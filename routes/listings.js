@@ -36,7 +36,7 @@ router
 router
   .route("/:id")
   .get(getListing)
-  .put(protect, authorize("shipper"), updateListing)
+  .put(updateListing)
   .delete(protect, authorize("shipper"), deleteListing);
 
 router.route("/user/:id").get(getListingByUserId);
