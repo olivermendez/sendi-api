@@ -87,3 +87,7 @@ process.on("unhandleRejection", (err, promise) => {
   //conse server & exit procees.
   server.close(() => process.exit(1));
 });
+
+process.once("UnhandledPromiseRejectionWarning", function () {
+  process.kill(process.pid, "UnhandledPromiseRejectionWarning");
+});
